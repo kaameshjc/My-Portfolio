@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J.Kaamesh | AI Portfolio</title>
+<meta name="description" content="J.Kaamesh - Artificial Intelligence and Data Science Student | Machine Learning | Data Analytics | Cybersecurity | SOC Analyst | Cyber Forensics Investigator">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#0b1120;
+--card:#111827;
+--primary:#2563eb;
+--accent:#06b6d4;
+--text:#ffffff;
+--muted:#cbd5e1;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text)}
+canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1}
+
+header{padding:6rem 8%;text-align:center}
+header h1{font-size:3rem;background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.typing{font-size:1.2rem;margin-top:1rem;color:var(--accent);min-height:30px}
+
+section{padding:4rem 8%}
+h2{margin-bottom:2rem;color:var(--accent);text-align:center}
+
+.card{background:rgba(17,24,39,.9);padding:2rem;border-radius:15px;margin-bottom:1.5rem;opacity:0;transform:translateY(40px);transition:.6s}
+.card.visible{opacity:1;transform:translateY(0)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+
+.skill-card{
+background:rgba(17,24,39,.9);
+padding:1.5rem;
+border-radius:12px;
+text-align:center;
+transition:.4s;
+opacity:0;
+transform:translateY(30px);
+border:1px solid rgba(6,182,212,0.2);
+}
+.skill-card.show{opacity:1;transform:translateY(0)}
+.skill-card:hover{
+transform:translateY(-8px) scale(1.05);
+box-shadow:0 0 25px rgba(6,182,212,.7);
+border-color:var(--accent);
+}
+
+.timeline-item{margin:20px 0;padding-left:20px;border-left:3px solid var(--accent);opacity:0;transform:translateX(-40px);transition:.6s}
+.timeline-item.show{opacity:1;transform:translateX(0)}
+
+.center{text-align:center}
+.btn{display:inline-block;margin-top:20px;padding:12px 30px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none;font-weight:600;transition:.3s}
+.btn:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(37,99,235,.7)}
+
+.contact-box{text-align:center;margin-top:20px}
+.contact-box a{color:var(--accent);text-decoration:none;font-weight:600}
+.contact-icons img{width:28px;margin:10px;transition:.3s}
+.contact-icons img:hover{transform:scale(1.2);filter:drop-shadow(0 0 10px var(--accent))}
+
+footer{text-align:center;padding:2rem;margin-top:3rem;border-top:1px solid rgba(255,255,255,.1);color:var(--muted)}
+</style>
+</head>
+
+<body>
+
+<canvas id="network"></canvas>
+
+<header>
+<h1>J.Kaamesh</h1>
+<div class="typing" id="typing"></div>
+</header>
+
+<section>
+<h2>About Me</h2>
+<div class="card">
+I am a passionate and curious learner with a strong interest in AI prompting and cybersecurity. I enjoy exploring how artificial intelligence works and how digital systems can be secured. I am also creative, with skills in 2D and 3D animation and designing, combining technology and imagination to build innovative and visually engaging projects.
+</div>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="card">
+<strong>Achariya College of Engineering Technology</strong><br>
+Puducherry<br>
+Bachelor of Technology in Artificial Intelligence and Data Science<br>
+CGPA : 7.2<br>
+2023 - 2027
+</div>
+<div class="card">
+<strong>Wiseman HR. Sec. School</strong><br>
+Completed Higher Secondary Schooling<br>
+Percentage : 51%<br>
+2023
+</div>
+</section>
+
+<section>
+<h2>Work Experience</h2>
+<div class="card">Intership Student – Smallest A.I Technologies (2026)</div>
+<div class="card">Virtual Prompt Engineering Intern – Future Intern (2026)</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="card">Prevention of Overloading and Underloading of Railway Wagons - Domain: Internet of Things</div>
+<div class="card">Diabetes Prediction - Domain: Machine Learning</div>
+<div class="card">AI-Based Malware Detection System - Domain: Cybersecurity</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<div class="grid">
+<div class="skill-card">Machine Learning</div>
+<div class="skill-card">Data Analysis</div>
+<div class="skill-card">Prompt Engineering</div>
+<div class="skill-card">Artificial Intelligence</div>
+<div class="skill-card">2D & 3D Designing</div>
+<div class="skill-card">Ethical Hacker </div>
+<div class="skill-card">Cyber Forensic Investigation</div>
+<div class="skill-card">3D Modelling</div>
+</div>
+</section>
+
+<section>
+<h2>Tools</h2>
+<div class="grid">
+<div class="skill-card">Excel</div>
+<div class="skill-card">Blender</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">ZBrush</div>
+<div class="skill-card">Unreal Engine</div>
+<div class="skill-card">Arduino IDE</div>
+<div class="skill-card">Git & GitHub</div>
+<div class="skill-card">RPA in UiPath</div>
+</div>
+</section>
+
+<section class="center">
+<h2>Certifications & Achievements</h2>
+<div class="card">Data Analytics - FITA Academy</div>
+<div class="card">Nativeva Offensive Security Certified Professional - Nativeva</div>
+<div class="card">Advance Data Visualization - GUVI HCL</div>
+<div class="card">Virtual Prompt Engineering Intern at Future Intern - 2026</div>
+</section>
+
+<section class="center">
+<a href="My Resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+<section class="center">
+<h2>Contact Information</h2>
+<div class="contact-box">
+Phone: 9514331608<br>
+Email: <a href="mailto:kaameshj@gmail.com">kaameshj@gmail.com</a><br>
+Location: Puducherry - INDIA
+<div class="contact-icons">
+<a href="https://www.instagram.com/kaamesh_j.c_/?__pwa=1" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+<a href="https://github.com/kaameshjc" target="_blank"><img src="Github.png" alt="GitHub"></a>
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 J. Kaamesh | AI Portfolio
+</footer>
+
+<script>
+// Typing Animation
+const roles=["Artificial Intelligence & Data Science Student","Machine Learning","Cybersecurity","Cyber Forensics Investigator","2D & 3D Designer"];
+let i=0,j=0,current="";
+function type(){
+if(j<roles[i].length){current+=roles[i][j];document.getElementById("typing").innerText=current+"|";j++;setTimeout(type,70)}
+else{setTimeout(()=>{current="";j=0;i=(i+1)%roles.length;type()},1500)}
+}
+type();
+
+// Scroll Animation
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('visible');entry.target.classList.add('show');}
+});
+},{threshold:0.2});
+document.querySelectorAll('.card,.timeline-item,.skill-card').forEach(el=>observer.observe(el));
+
+// Neural Network Background
+const canvas=document.getElementById("network");
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let nodes=[];
+for(let i=0;i<70;i++){
+nodes.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,vx:(Math.random()-0.5),vy:(Math.random()-0.5)})}
+
+function animate(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+nodes.forEach((n,i)=>{
+n.x+=n.vx;n.y+=n.vy;
+if(n.x<0||n.x>canvas.width)n.vx*=-1;
+if(n.y<0||n.y>canvas.height)n.vy*=-1;
+ctx.beginPath();ctx.arc(n.x,n.y,2,0,Math.PI*2);
+ctx.fillStyle="#06b6d4";ctx.fill();
+for(let j=i+1;j<nodes.length;j++){
+let m=nodes[j];
+let dist=Math.hypot(n.x-m.x,n.y-m.y);
+if(dist<120){ctx.beginPath();ctx.moveTo(n.x,n.y);ctx.lineTo(m.x,m.y);
+ctx.strokeStyle="rgba(6,182,212,"+(1-dist/120)+")";ctx.stroke()}
+}
+});
+requestAnimationFrame(animate);
+}
+animate();
+
+window.onresize=()=>{canvas.width=window.innerWidth;canvas.height=window.innerHeight}
+</script>
+
+</body>
+</html>
